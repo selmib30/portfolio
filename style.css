@@ -471,7 +471,7 @@ body a {
 #section-2 .principale{
   display: flex;
   flex-direction: row;
-  height: 38em;
+  height: 50em;
   color: rgb(255, 255, 255);
   background-image: linear-gradient(rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
 }
@@ -495,26 +495,35 @@ section .presentation{
 }
 #section-2 .qualite {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 68rem;
   border-top: solid;
   
+}
+#section-2 .qualiteap {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #section-2 .organiser {
   width: fit-content;
   height: 15rem;
   margin-left: 8%;
+  text-align: center;
+}
+#section-2 .organiser  p{
+  color: #fff;
 }
 #section-2 .titre {
-  width: 100rem;
+  width: 65rem;
   height: fit-content;
 }
-
+.formations p{
+  color: #6b6b6b;
+}
 /*skill bar*/
 .development_title {
   text-align: center;
-  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
