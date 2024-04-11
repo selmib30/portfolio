@@ -518,7 +518,7 @@ section .presentation{
   width: 65rem;
   height: fit-content;
 }
-.formations p{
+.formations p {
   color: #6b6b6b;
 }
 /*skill bar*/
@@ -846,4 +846,12 @@ section .presentation{
   100% {
     width: 35%;
   }
+}
+
+#section-3 .projet{
+  display: flex;
+  flex-direction: row;
+  height: 50em;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(rgba(243, 129, 129, 0.9),rgba(252, 227, 138, 0.9));
 }
