@@ -194,6 +194,10 @@ body a {
   text-transform: uppercase;
   border: 0.1875em solid #fff;
 }
+a{
+  outline: none;
+  color: #fff;
+}
 #section-1 .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a:hover {
   color: #e88382;
   border-color: #e88382;
@@ -848,10 +852,116 @@ section .presentation{
   }
 }
 
+@media only screen and (max-width: 600px) {
+  #section-2 .principale {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  section .presentation {
+    width: auto;
+  }
+  
+  #section-2 .qualite {
+    width: auto; 
+    border: none;
+  }
+  
+  #section-2 .qualite img {
+    width: 5rem; 
+    height: 5rem;
+  }
+  .qualite .titre {
+    max-width: 90%; 
+    max-width: 90%; 
+    max-width: 90%; 
+    margin: 0 auto; 
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+  .skills-bar-container {
+    width: 80%; 
+    min-width: auto; 
+    top: auto; 
+    transform: none; 
+    margin-top: 20px; 
+  }
+  .progressbar-title .percent {
+    top: 20px; 
+  }
+}
+
+/*section 3 style*/
+
 #section-3 .projet{
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   height: 50em;
+  width: 100%;
   color: rgb(255, 255, 255);
   background-image: linear-gradient(rgba(243, 129, 129, 0.9),rgba(252, 227, 138, 0.9));
+}
+
+#section-3 .projet h2{
+width: 110rem;
+text-align: center;
+}
+
+#section-3 p {
+  margin: 3%;
+}
+
+#section-3 .projet2{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+#section-3 .projet2 div{
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  font-size: larger;
+  border: solid;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px #646464;
+  margin-left: 15rem;
+}
+
+#section-3 .projet img {
+  width: 20rem;
+  height: 20rem;
+  transition: width 0.3s;
+  margin-bottom: 1%;
+}
+
+
+#section-3 .projet img:hover {
+  width: 25rem;
+  height: 25rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #section-3 .projet {
+    height: auto; 
+    padding: 20px;
+  }
+  
+  #section-3 .projet h2 {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #section-3 .projet2 div {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  #section-3 .projet img:hover {
+    width: 20rem;
+    height: 20rem;
+}
 }
