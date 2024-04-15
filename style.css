@@ -206,22 +206,6 @@ a{
   border-color: #e88382;
   transition: 0.3s;
 }
-#section-1 .content-slider .slider #top-banner-1 {
-  background: url('https://checkboxes-demo.webdevs.co.ua/images/mogo/banner-1.png') no-repeat center center;
-  background-size: cover;
-}
-#section-1 .content-slider .slider #top-banner-2 {
-  background: url('https://checkboxes-demo.webdevs.co.ua/images/mogo/banner-2.png') no-repeat center center;
-  background-size: cover;
-}
-#section-1 .content-slider .slider #top-banner-3 {
-  background: url('https://checkboxes-demo.webdevs.co.ua/images/mogo/banner-3.png') no-repeat center center;
-  background-size: cover;
-}
-#section-1 .content-slider .slider #top-banner-4 {
-  background: url('https://checkboxes-demo.webdevs.co.ua/images/mogo/banner-4.png') no-repeat center center;
-  background-size: cover;
-}
 #section-1 .content-slider nav {
   position: absolute;
   bottom: 0.5em;
