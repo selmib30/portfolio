@@ -882,13 +882,10 @@ section .presentation{
   }
 }
 
-/*section 3 style*/
+/*section 3 styles*/
 
 #section-3 .projet{
-  display: flex;
-  flex-wrap: wrap;
-  height: 50em;
-  width: 100%;
+  height: fit-content;
   color: rgb(255, 255, 255);
   background-image: linear-gradient(rgba(243, 129, 129, 0.9),rgba(252, 227, 138, 0.9));
 }
@@ -903,28 +900,28 @@ text-align: center;
 }
 
 #section-3 .projet2{
+  display: grid;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
+  min-height: 45rem;
 }
-
-
-
-#section-3 .projet2 div{
+#section-3 .projet3{
   height: fit-content;
   width: fit-content;
   text-align: center;
   font-size: larger;
-  border: solid;
+  border-color: rgba(247, 167, 167, 0.884);
+  margin-top: 10%;
+  margin-left: 15rem;
   border-radius: 10px;
   box-shadow: 10px 5px 5px #646464;
-  margin-left: 15rem;
 }
 
 #section-3 .projet img {
   width: 20rem;
   height: 20rem;
   transition: width 0.3s;
-  margin-bottom: 1%;
 }
 
 
