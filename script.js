@@ -13,13 +13,13 @@
   });
 
 var lang = {
-    "html": "90%",
-    "css": "90%",
-    "javascript": "70%",
-    "php": "55%",
-    "wordpress": "65%",
-    "bootstrap": "75%",
-    "laravel": "35%"
+    "html": "avancé",
+    "css": "avancé",
+    "javascript": "intermédiaire",
+    "php": "avancé",
+    "wordpress": "intermédiaire",
+    "bootstrap": "intermédiaire",
+    "laravel": "débutant"
 };
 var multiply = 4;
 

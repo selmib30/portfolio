@@ -719,7 +719,7 @@ section .presentation{
     width: 0%;
   }
   100% {
-    width: 55%;
+    width: 90%;
   }
 }
 @-moz-keyframes progress-php {
@@ -727,7 +727,7 @@ section .presentation{
     width: 0%;
   }
   100% {
-    width: 55%;
+    width: 90%;
   }
 }
 @-ms-keyframes progress-php {
@@ -735,7 +735,7 @@ section .presentation{
     width: 0%;
   }
   100% {
-    width: 55%;
+    width: 90%;
   }
 }
 @keyframes progress-php {
@@ -743,7 +743,7 @@ section .presentation{
     width: 0%;
   }
   100% {
-    width: 55%;
+    width: 90%;
   }
 }
 @-webkit-keyframes progress-bootstrap {
@@ -978,3 +978,36 @@ text-align: center;
     height: 20rem;
 }
 }
+
+#me_contacter{
+  height: fit-content;
+  color: #646464;
+  min-height: 50rem;
+  background-image: linear-gradient(rgba(252, 227, 138, 0.9),rgba(243, 129, 129, 0.9));
+}
+
+.titre{
+  padding-top: 10%;
+  text-align: center;
+}
+
+.formulaire{
+  display: grid;
+  text-align: center;
+  height: fit-content;
+  margin-top: 2%;
+  border: solid;
+  justify-content: center;
+}
+
+.formulaire div{
+
+
+}
+
+.mail_titre{
+  text-align: left;
+  border: solid;
+  font-size: larger;
+}
+
