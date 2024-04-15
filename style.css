@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -202,22 +206,6 @@ a{
   color: #e88382;
   border-color: #e88382;
   transition: 0.3s;
-}
-#section-1 .content-slider .slider #top-banner-1 {
-  background: url('https://checkboxes-demo.webdevs.co.ua/images/mogo/banner-1.png') no-repeat center center;
-  background-size: cover;
-}
-#section-1 .content-slider .slider #top-banner-2 {
-  background: url('https://checkboxes-demo.webdevs.co.ua/images/mogo/banner-2.png') no-repeat center center;
-  background-size: cover;
-}
-#section-1 .content-slider .slider #top-banner-3 {
-  background: url('https://checkboxes-demo.webdevs.co.ua/images/mogo/banner-3.png') no-repeat center center;
-  background-size: cover;
-}
-#section-1 .content-slider .slider #top-banner-4 {
-  background: url('https://checkboxes-demo.webdevs.co.ua/images/mogo/banner-4.png') no-repeat center center;
-  background-size: cover;
 }
 #section-1 .content-slider nav {
   position: absolute;
@@ -475,9 +463,11 @@ a{
 #section-2 .principale{
   display: flex;
   flex-direction: row;
-  height: 50em;
+  height: fit-content;
+  width: inherit;
   color: rgb(255, 255, 255);
   background-image: linear-gradient(rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+
 }
 #section-2 h2 {
   padding:2%;
@@ -519,7 +509,7 @@ section .presentation{
   color: #fff;
 }
 #section-2 .titre {
-  width: 65rem;
+  width: auto;
   height: fit-content;
 }
 .formations p {
@@ -528,6 +518,7 @@ section .presentation{
 /*skill bar*/
 .development_title {
   text-align: center;
+  margin-top: 20%;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -560,7 +551,7 @@ section .presentation{
 .progressbar-title .percent {
   position: absolute;
   right: 2px;
-  top: 40px;
+  top: 30px;
 }
 
 .bar-container {
@@ -944,7 +935,32 @@ text-align: center;
 
 @media only screen and (max-width: 600px) {
   #section-3 .projet {
-    height: auto; 
+    height: auto;
+    width: auto;
+    padding: 20px;
+  }
+  
+  #section-3 .projet h2 {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #section-3 .projet2 div {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  #section-3 .projet img:hover {
+    width: 20rem;
+    height: 20rem;
+}
+}
+@media only screen and (max-width: 950px) {
+  #section-3 .projet {
+    height: auto;
+    width: auto;
     padding: 20px;
   }
   
