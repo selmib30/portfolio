@@ -1,4 +1,11 @@
-///// Section-1 Slider /////   
+function submitForm() {
+  var objet = document.getElementById("mail_objet").value;
+  var message = document.getElementById("mail_message").value;
+  var destinataire = "selimb30@outlook.fr";
+  var mailtoLink = "mailto:" + destinataire + "?subject=" + objet + "&body=" + message;
+  window.location.href = mailtoLink;
+}
+
   function bannerSwitcher() {
     next = $('.sec-1-input').filter(':checked').next('.sec-1-input');
     if (next.length) next.prop('checked', true);

@@ -20,7 +20,7 @@
           <li><a href="#section-2">À Propos De  Moi</a></li>
           <li><a href="selim benzouaoui.pdf">Mon CV</a></li>
           <li><a href="#section-3">Mes travaux</a></li>
-          <li><a href="#main-footer"> Me Contacter</a></li>
+          <li><a href="#me_contacter"> Me Contacter</a></li>
         </ul>
       </nav>
     </div>
@@ -213,19 +213,19 @@
             <a href="http://carbone.lycee-jdo13.fr" target="_blank">
               <div class="projet3">
                 <img src="logo.png" alt="">
-                <p>Projet Carbone</p>
+                <p>Projet Carbone (en ligne)</p>
               </div>
             </a>
             <a href="http://stageleap.bc-studio84.fr/" target="_blank">
               <div class="projet3">
                 <img src="stageleap.png" alt="">
-                <p>stage leap</p>
+                <p>stage leap (en court)</p>
               </div>
             </a>
             <a href="http://" target="_blank">
               <div class="projet3">
                 <img src="lescjatlibredevdene.png" alt="">
-                <p>Les Chats Libres de Vedène</p>
+                <p>Les Chats Libres de Vedène (en ligne)</p>
               </div>
             </a>
               <!--<a href="http://" target="_blank">
@@ -244,18 +244,12 @@
             <h2>me contacter</h2>
           </div>
           <div class="formulaire">
-            <form>
-              <div>
-                <div class="mail_titre">sujet</div> 
-                <div><input type="text"></div>
-              </div>
-              <div>
-                <div class="mail_titre">message</div> 
-                <div><input type="text"></div>
-              </div>
-              <div>
-                <button>envoyer</button>
-              </div>
+            <form onsubmit="submitForm(); return false;">
+              <label for="mail_objet" class="mail_titre">Objet:</label><br>
+              <input type="text" id="mail_objet" name="sujet"><br>
+              <label for="mail_message" class="mail_titre">Message:</label><br>
+              <textarea id="mail_message" name="message"></textarea><br>
+              <input type="submit" value="Envoyer" class="envoyer">
           </form>
           </div>
         </section>

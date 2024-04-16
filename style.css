@@ -921,7 +921,7 @@ text-align: center;
 #section-3 .projet img {
   width: 20rem;
   height: 20rem;
-  transition: width 0.3s;
+  transition: 0.3s;
 }
 
 
@@ -993,21 +993,48 @@ text-align: center;
 
 .formulaire{
   display: grid;
-  text-align: center;
   height: fit-content;
   margin-top: 2%;
-  border: solid;
   justify-content: center;
 }
 
-.formulaire div{
-
-
+.titre_mail{
+  font-size: 2rem;
 }
 
+#mail_objet{
+  width: 40rem;
+  height: 2rem;
+  border-radius: 10px 10px 10px 10px;
+  border-color: #e88382;
+  border-width: 3px;
+}
+
+#mail_message{
+  width: 40rem;
+  height: 30rem;
+  border-radius: 10px 10px 10px 10px;
+  border-color: #e88382;
+  border-width: 3px;
+}
 .mail_titre{
   text-align: left;
-  border: solid;
-  font-size: larger;
+  font-size: 2rem;
 }
 
+.envoyer{
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+  height: 2rem;
+  width: 5rem;
+  border: solid;
+  background-color: #e88382;
+  border-radius: 10px 10px 10px 10px;
+  border-color: #e88382;
+  transition: 0.3s;
+}
+
+.envoyer:hover{
+  height: 3rem;
+  width: 6rem;
+}
