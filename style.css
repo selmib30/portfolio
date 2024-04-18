@@ -465,6 +465,7 @@ a{
   flex-direction: row;
   height: fit-content;
   width: inherit;
+  border-top: solid;
   color: rgb(255, 255, 255);
   background-image: linear-gradient(rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
 
@@ -480,7 +481,6 @@ a{
 }
 section .presentation{
   width: auto;
-  border-top: solid;
 }
 #section-2 p {
   margin: 3%;
@@ -494,9 +494,7 @@ section .presentation{
 #section-2 .qualite {
   display: flex;
   flex-direction: column;
-  width: 68rem;
-  border-top: solid;
-  
+  width: 68rem;  
 }
 #section-2 .qualiteap {
   display: flex;
@@ -859,12 +857,22 @@ section .presentation{
   #section-2 .principale {
     flex-direction: column;
     height: auto;
+    width: 100dvw;
   }
   
   section .presentation {
     width: auto;
   }
   
+  .about{
+    max-width: none;
+    width: 100dvw;
+  }
+
+  .development_title{
+    width: 100dvw;
+  }
+
   #section-2 .qualite {
     width: auto; 
     border: none;
@@ -891,6 +899,10 @@ section .presentation{
   }
   .progressbar-title .percent {
     top: 20px; 
+  }
+
+  .organiser{
+    height: fit-content;
   }
 }
 
