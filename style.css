@@ -469,13 +469,17 @@ a{
   background-image: linear-gradient(rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
 
 }
+.about{
+  max-width: 65dvw;
+  height: fit-content;
+}
 #section-2 h2 {
   padding:2%;
   text-align: center;
   
 }
 section .presentation{
-  width: 50rem;
+  width: auto;
   border-top: solid;
 }
 #section-2 p {
@@ -512,15 +516,24 @@ section .presentation{
   width: auto;
   height: fit-content;
 }
+.formations{
+  display: flex;
+  flex-wrap: wrap;
+}
 .formations p {
   color: #6b6b6b;
 }
 /*skill bar*/
 .development_title {
   text-align: center;
-  margin-top: 20%;
+  margin-top: 8%;
   text-transform: uppercase;
   letter-spacing: 3px;
+  width: 72dvw;
+}
+
+.development_title div{
+  width: 72dvw;
 }
 
 .skills-bar-container {
@@ -528,7 +541,6 @@ section .presentation{
   margin: 0 auto;
   width: 40%;
   min-width: 350px;
-  top: 40%;
   transform: translate(-50%, -50%) s;
   list-style: none;
   margin-bottom: 25px;
@@ -891,7 +903,7 @@ section .presentation{
 }
 
 #section-3 .projet h2{
-width: 110rem;
+width: auto;
 text-align: center;
 }
 
