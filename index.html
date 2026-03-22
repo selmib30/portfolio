@@ -1,256 +1,127 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>portfolio</title>
-    <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio</title>
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="./style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Développeur</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-  <header class="main-header">
-    <div class="header-wrapper">
-      <div class="main-logo">portfolio</div>
-      <nav>
-        <ul class="main-menu">
-          <li><a href="#section-2">À Propos De  Moi</a></li>
-          <li><a href="selim benzouaoui.pdf" target="_blank">Mon CV</a></li>
-          <li><a href="#section-3">Mes Projets</a></li>
-          <li><a href="#me_contacter"> Me Contacter</a></li>
-        </ul>
-      </nav>
+
+<header id="navbar">
+    <h1>Portfolio</h1>
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#skills">Compétences</a>
+        <a href="#contact">Contact</a>
+        <a href="Benzouaoui_Selim_CV.pdf" target="_blank">Mon CV</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h2>Développeur Mobile</h2>
+    <p>Je conçois des applications modernes, performantes et centrées utilisateur.</p>
+    <a href="#projects" class="button">Découvrir mes projets</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section reveal">
+    <h2>À propos</h2>
+    <p>
+        Technicien supérieur en informatique spécialisé en développement mobile,
+        je développe des solutions innovantes en respectant les bonnes pratiques
+        UX/UI et le numérique responsable.
+    </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section reveal">
+    <h2>Projets</h2>
+
+    <div class="projects-grid">
+
+        <!-- PROJET CMPR -->
+        <div class="project-card">
+            <h3>Réalité virtuelle pour la rééducation (CMPR)</h3>
+
+            <p>
+                Projet collaboratif avec le Centre Hospitalier du Puy-en-Velay visant à
+                développer une solution de rééducation en réalité virtuelle pour des patients atteints de troubles neurologiques.
+            </p>
+
+            <p><strong>Mon rôle :</strong> UI (interface utilisateur)</p>
+
+            <p>
+                Conception d’interfaces adaptées à des patients (30 à 70 ans),
+                avec un focus sur l’accessibilité, la lisibilité et la simplicité d’utilisation.
+            </p>
+
+            <a href="projet-cmpr.html">Voir le projet</a>
+        </div>
+
+        <!-- PROJET STAGE -->
+        <div class="project-card">
+            <h3>Plateforme de recherche de stages & alternances</h3>
+            <p>Projet de création d’une plateforme de recherche de stages et d’alternances.</p>
+            <a href="projet-stage.html">Voir le projet</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Forge de Héros</h3>
+            <p>Projet réalisé en groupe visant à développer une application complète de création
+            et gestion de personnages inspirée de Donjons & Dragons.</p>
+            <a href="projet-forge.html">Voir le projet</a>
+        </div>
+
     </div>
-  </header>
-  <section id="section-1">
-    <div class="content-slider">
-      <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
-      <input type="radio" id="banner2" class="sec-1-input" name="banner">
-      <input type="radio" id="banner3" class="sec-1-input" name="banner">
-      <input type="radio" id="banner4" class="sec-1-input" name="banner">
-      <div class="slider">
-        <div id="top-banner-1" class="banner">
-          <div class="banner-inner-wrapper">
-            <h2>bienvenue sur</h2>
-            <h1>mon<br>portfolio</h1>
-            <div class="line"></div>
-          </div>
-        </div>
-        <div id="top-banner-2" class="banner">
-          <div class="banner-inner-wrapper">
-            <h2> À Propos De  Moi</h2>
-            <div class="line"></div>
-            <div class="learn-more-button"><a href="#section-2">voir plus</a></div>
-          </div>
-        </div>
-        <div id="top-banner-3" class="banner">
-          <div class="banner-inner-wrapper">
-            <h2>Mes Travaux</h2>
-            <div class="line"></div>
-            <div class="learn-more-button"><a href="#section-3">voir plus</a></div>
-          </div>
-        </div>
-        <div id="top-banner-4" class="banner">
-          <div class="banner-inner-wrapper">
-            <h2>Me contacter</h2>
-            <div class="line"></div>
-            <div class="learn-more-button"><a href="#me_contacter">voir plus</a></div>
-          </div>
-        </div>
-      </div>
-      <nav>
-        <div class="controls">
-          <label for="banner1"><span class="progressbar"><span class="progressbar-fill"></span></span><span>01</span> Intro</label>
-          <label for="banner2"><span class="progressbar"><span class="progressbar-fill"></span></span><span>02</span> À Propos de Moi</label>
-          <label for="banner3"><span class="progressbar"><span class="progressbar-fill"></span></span><span>03</span> Mes travaux</label>
-          <label for="banner4"><span class="progressbar"><span class="progressbar-fill"></span></span><span>04</span> Me contacter</label>
-        </div>
-      </nav>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section reveal">
+    <h2>Compétences</h2>
+
+    <div class="skill">
+        <span>Mobile</span>
+        <div class="bar"><div class="level level1"></div></div>
     </div>
-  </section>
-  <div>
-    <section id="section-2">
-      <div class="principale">
-        <div class="about">
-        <div class="presentation">
-          <h2>PRÉSENTATION</h2>
-          <p>Bonjour, je suis étudiant en Bachelor développement web et mobile à Esimed.  
-          Passionné par l'informatique et plus particulièrement par le développement, 
-          je recherche aujourd'hui une alternance dans ce domaine.</p>
-        </div>
-        <div class="development_title">
-          <h2>MES COMPÉTENCES</h2>
-        </div>
-            <ul class="skills-bar-container">
-              <li>
-                <div class="progressbar-title">
-                  <h3>HTML 5</h3>
-                  <span class="percent" id="html-pourcent"></span>
-                </div>
-                <div class="bar-container">
-                  <span class="progressbar progresstomatoes" id="progress-html"></span>
-                </div>
-              </li>
-              <li>
-                <div class="progressbar-title">
-                  <h3>CSS 3</h3>
-                  <span class="percent" id="css-pourcent"></span>
-                </div>
-                <div class="bar-container">
-                  <span class="progressbar progresstomatoes" id= "progress-css"></span>
-                </div>
-              </li>
-              
-              <li><div class="progressbar-title"> 
-                
-                <h3>JavaScript</h3>
-                <span class="percent" id="javascript-pourcent"></span>
-              </div>
-              <div class="bar-container">
-                <span class="progressbar progresstomatoes" id="progress-javascript"></span>
-              </div>
-            </li>
-            
-            <li>
-              <div class="progressbar-title">
-                <h3>PHP 8</h3>
-                <span class="percent" id="php-pourcent"></span>
-              </div>
-              <div class="bar-container">
-                <span class="progressbar progresstomatoes" id="progress-php"></span>
-              </div>
-            </li>
-            
-            <li>
-              <div class="progressbar-title col">
-                <h3>Wordpress</h3>
-                <span class="percent" id="wordpress-pourcent"></span>
-              </div>
-              <div class="bar-container">
-                <span class="progressbar progresstomatoes" id="progress-wordpress"></span>
-              </div>
-            </li>
-            <li>
-              <div class="progressbar-title">
-                <h3>Bootstrap</h3>
-                <span class="percent" id="bootstrap-pourcent"></span>
-              </div>
-              <div class="bar-container">
-                <span class="progressbar progresstomatoes" id="progress-bootstrap"></span>
-              </div>
-            </li>
-            <li>
-              <div class="progressbar-title">
-                <h3>Laravel</h3>
-                <span class="percent" id="laravel-pourcent"></span>
-              </div>
-              <div class="bar-container">
-                <span class="progressbar progresstomatoes" id= "progress-laravel"></span>
-              </div>
-            </li>
-          </ul>
-        </div>
-          <div class="qualite">
-            <div class="titre">
-              <h2> MES QUALITÉS</h2>
-            </div>
-            <div class="qualiteap">
-              <div class="organiser">
-                <img src="structure-hierarchique.png" alt="organiser">
-                <p>Organisé</p>
-              </div>
-              <div class="organiser right">
-                <img src="informatif.png" alt="communications">
-                <p>Communications</p>
-              </div>
-              <div class="organiser">
-                <img src="question.png" alt="curieux">
-                <p>Curieux</p>
-              </div>
-              <div class="organiser right">
-                <img src="livres.png" alt="Rigoureux">
-                <p>Rigoureux</p>
-              </div>
-            </div>
-            <div class="formations">
-              <div class="nom contenue_trav">
-                <div class="titre">
-                  <h2>Formations</h2>
-                </div>
-                <ul>
-                  <li>
-                    <div>2022-2024</div> 
-                    <div class=>
-                      <p>BTS SIO (Services informatiques aux organisations) - Lycée Théodore Aubanel Avignon</p> 
-                      <p>Enseignements : Option SLAM(développement), Mathématiques appliquées, Cybersécurité</p>
-                      <p>Compétences : Création de site internet, Maintenance des serveurs informatiques, Développement</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div>2019-2022</div>
-                    <div class=>
-                      <p> BAC général spé. NSI, SES - Lycée Jacques Prévert, Alès.</p> 
-                      <p>Enseignements : Numériques Sciences Informatiques, Sciences Economiques et Sociales, Mathématiques</p>
-                      <p>Compétences : Développer en python, Gérer des bases de données, Résoudre des problèmes, Manipuler les données, Trier des informations dans un document statistique</p>    
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="section-3">
-          <div class="projet">
-            <div class="titre">
-              <h2>Mes projets</h2>
-            </div>
-            <div class="projet2">
-              <div class="projet3">
-                <a href="http://carbone.lycee-jdo13.fr" target="_blank">
-                <img src="logo.png" alt="">
-                <p>Projet Carbone (en ligne)</p>
-              </a>
-              </div>
-              <div class="projet3">
-                <a href="http://stageleap.bc-studio84.fr/" target="_blank">
-                <img src="stageleap.png" alt="">
-                <p>stage leap (en court)</p>
-                </a>
-              </div>
-              <div class="projet3">
-                <img src="lescjatlibredevdene.png" alt="">
-                <p>Les Chats Libres de Vedène (plus disponible)</p>
-              </div>
-              <!--<a href="http://" target="_blank">
-                  <div>
-                <img src="livres.png" alt="">
-                <p>le projet</p>
-              </div>
-            </a>-->
-           </div>
-          </div>
-        </section>
-      </div>
-      <div>
-        <section id="me_contacter">
-          <div class="titre">
-            <h2>me contacter</h2>
-          </div>
-          <div class="formulaire">
-            <form onsubmit="submitForm(); return false;">
-              <label for="mail_objet" class="mail_titre">Objet:</label><br>
-              <input type="text" id="mail_objet" name="sujet"><br>
-              <label for="mail_message" class="mail_titre">Message:</label><br>
-              <textarea id="mail_message" name="message"></textarea><br>
-              <input type="submit" value="Envoyer" class="envoyer">
-          </form>
-          </div>
-        </section>
-      </div>
-    </body>
+
+    <div class="skill">
+        <span>Web</span>
+        <div class="bar"><div class="level level2"></div></div>
+    </div>
+
+    <div class="skill">
+        <span>UI/UX</span>
+        <div class="bar"><div class="level level3"></div></div>
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section reveal">
+    <h2>Contact</h2>
+
+    <form>
+        <input type="text" placeholder="Nom">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button>Envoyer</button>
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 - Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
 </html>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src='https://use.fontawesome.com/8ae46bccf5.js'></script><script  src="./script.js"></script>
